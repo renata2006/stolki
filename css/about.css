@@ -1,0 +1,26 @@
+.about_us_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 991px) {
+    .about_us_box {
+        padding-top: 80px;
+    }
+}
+.about_us_text {
+    text-align: center;
+}
+.about_us_header {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about_us_paragraph {
+    line-height: 1.9;
+    color: #777777;
+    font-size: 18px;
+}
+.about_us_img {
+    width: 50%;
+}
