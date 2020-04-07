@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Stołki drewniane</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
+    <title>Stołki drewniane</title>
     <link rel="stylesheet" href="css/start.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/galeria.css" />
     <link rel="stylesheet" href="css/products.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162997205-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-162997205-1", {
+        page_path: location.pathname + location.hash,
+      });
+    </script>
   </head>
 
   <body>
@@ -45,19 +61,42 @@
       </button>
     </nav>
 
-    <div class="gallery_box_wood table_big">
-      <img src="galeria/stoły/5 (1).jpg" alt="" />
-      <img src="galeria/stoły/5 (2).jpg" alt="" />
-      <img src="galeria/stoły/5 (3).jpg" alt="" />
-      <img src="galeria/stoły/5 (4).jpg" alt="" />
-      <img src="galeria/stoły/5 (5).jpg" alt="" />
-      <img src="galeria/stoły/5 (6).jpg" alt="" />
-      <img src="galeria/stoły/5 (7).jpg" alt="" />
-      <img src="galeria/stoły/5 (8).jpg" alt="" />
-      <img src="galeria/stoły/5 (9).jpg" alt="" />
-      <img src="galeria/stoły/5 (10).jpg" alt="" />
-      <img src="galeria/stoły/5 (11).jpg" alt="" />
-    </div>
+    <section class="gallery_box">
+      <div class="gallery_box_other">
+        <a href="stool.html"><img src="galeria/stołki/1 (33).jpg" alt="" /></a>
+        <p>stołki drewniane - niepowtarzalne</p>
+      </div>
+      <div class="gallery_box_other">
+        <a href="tabl_small.html"
+          ><img src="galeria/stoliki/2 (17).jpg" alt=""
+        /></a>
+        <p>stoliki drewniane - unikalne</p>
+      </div>
+      <div class="gallery_box_other">
+        <a href="bench.html">
+          <img src="galeria/ławki/3 (5).jpg" alt="" />
+        </a>
+        <p>ławki drewniane - indywidualne</p>
+      </div>
+      <div class="gallery_box_other">
+        <a href="stump.html">
+          <img src="galeria/pieńki/4 (10).jpg" alt="" />
+        </a>
+        <p>pieńki drewniane - nietypowe</p>
+      </div>
+      <div class="gallery_box_other">
+        <a href="tabl_big.html">
+          <img src="galeria/stoły/5 (1).jpg" alt="" />
+        </a>
+        <p>stoły drewniane - jedyne w swoim rodzaju</p>
+      </div>
+      <div class="gallery_box_other">
+        <a href="other.html">
+          <img src="galeria/inne/6 (2).jpg" alt="" />
+        </a>
+        <p>półki,szafki,meble drewniane</p>
+      </div>
+    </section>
     <script src="js/navigation.js"></script>
   </body>
 </html>
