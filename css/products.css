@@ -1,23 +1,59 @@
-.gallery_box_wood {
+.gallery{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.gallery_text {
+    font-size: 30px;
+    text-align: center;
+    color: #777777;
+    flex-basis: 5vh;
+    line-height: 5vh;
+    
+}
+.upside {
+    transform: rotate(180deg);
+}
+.gallery-box {
+    flex-grow: 1;
+    display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    align-content: center;
-    background-color: #ceb79d;
-    padding: 10px 0;   
+    align-content: space-around;
 }
-.gallery_box_wood img {
-    padding: 5px;
-    max-width: 100%;
-    width: 360px;  
+
+.gallery-box>div {
+    flex-basis: 21%;
+    padding: 10px;
+   
+}
+.gallery-box img {
+    width: 100%;
+}
+@media( max-width:1024px) {
+    .gallery-box>div {
+        flex-basis: 31%;      
+}
+}
+
+@media( max-width:870px) {
+    .gallery-box>div {
+        flex-basis: 45%;      
+}
+}
+@media( max-width:670px) {
+    .gallery-box>div {
+        flex-basis: 51%;        
+}
+}
+
+.stool {
+    background-color: rgb(225, 242, 248);
 }
 .bench {
     background-color: rgb(175, 247, 211);
 }
-.stool {
-    background-color: rgb(225, 242, 248);
-}
+
 .stump {
     background-color: lightgray;
 }
@@ -26,22 +62,4 @@
 }
 .other {
     background-color: rgb(204, 225, 247);
-}
-/* style kontakt */
-.contact_box {
-    display: flex;
-    flex-direction: column;
-  
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100vh;
-}
-.contact_box_form {
-    text-align: center;
-}
-.contact_box img {
-    width: 40%;
-}
-.contact_box_form p {
-    font-size: 20px;
 }

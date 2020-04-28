@@ -1,0 +1,47 @@
+.information_box {
+    background-color: rgb(231, 231, 250);
+    color: #333232;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    height: 100vh;
+    
+}
+.informaction_box-text {
+    color: rgb(63, 62, 62);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    
+}
+.informaction_box-text h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.informaction_box-image2 img{
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+  
+}
+
+@media (max-width: 825px) {
+    .informaction_box-text {
+       font-size: 18px;  
+    }
+}
+
+@media (max-width: 590px) {
+.informaction_box-text {
+    padding: 0 10%;
+    font-size: 16px;
+}
+}
+
+@media (max-width: 420px) {
+    .information_box {
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+}

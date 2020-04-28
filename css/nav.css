@@ -48,7 +48,7 @@
     display: block;
     padding: 5px;
     text-align: center;
-    color: white;
+    color: #535353;
     animation: all 0.3;
 }
 .ithem {
@@ -72,7 +72,7 @@
 
 .up {
     display: block;
-    transform: scale(-1);
+    transform: rotate(180deg);
 }
 .navigation_mobile_button {
     display: none;
@@ -89,7 +89,7 @@
 @media (max-width: 991px) {
      .navigation_mobile_button_img {
         width: 25px;
-         display: block;
+        display: block;
     }
     .ithem {
         width: 20%;
