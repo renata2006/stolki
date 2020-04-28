@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>stołki drewniane</title>
     <meta name="descripyion" content="stołki drewniane">
+    <!-- <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="oferta.css">
     <link rel="stylesheet" href="gallery.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/lib/js/lightgallery.min.js"></script>
 </head>
 
 <body>
@@ -154,8 +156,8 @@
 
     <div class="gallery_box" id="stool">
         <h1 class="gallery_box-text">stołki drewniane</h1>
-        <div class="gallery_box-image">
-            <div>
+        <div class="gallery_box-image"  id="lightgallery">
+            <a href="galeria/stolki/1(1).jpg">
                 <img src="galeria/stolki/1(1).jpg" alt="">
             </div>
             <div>
@@ -283,6 +285,15 @@
             spójrz, jak sie z nami skontaktować
         </p>
     </section>
+
+<!-- aaaaaaaaaaaaa -->
+
+
+        <script type="text/javascript">
+  lightGallery(document.getElementById('lightgallery'), {
+        thumbnail: true
+    }); 
+        </script>
 </body>
 
 </html>
