@@ -17,8 +17,9 @@
   <link rel="stylesheet" href="work.css">
   <link rel="stylesheet" href="oferta.css">
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css">
 <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/lib/js/lightgallery.min.js"></script>
+    src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"></script>
 </head>
 
 <body>
@@ -156,13 +157,15 @@
 
   <div class="gallery_box" id="stool">
     <h1 class="gallery_box-text">stołki drewniane</h1>
-    <div class="gallery_box-image">
-      <div>
-        <img src="galeria/stolki/stolki1.jpg" alt="">
-      </div>
-      <div>
+    <div id="lightgallery" class="gallery_box-image">
+        
+        <a href="galeria/stolki/stolki1.jpg">
+      
+            <img src="galeria/stolki/stolki1.jpg" alt="">
+        </a>
+      <a href="galeria/stolki/stolki2.jpg">
         <img src="galeria/stolki/stolki2.jpg" alt="">
-      </div>
+      </a>
       <div>
         <img src="galeria/stolki/stolki3.jpg" alt="">
       </div>
@@ -300,6 +303,7 @@
             lightGallery(document.getElementById('lightgallery'), {
                 thumbnail: true
             }); 
+            console.log('lighgallery')
         </script>
 </body>
 
