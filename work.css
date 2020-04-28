@@ -1,0 +1,50 @@
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 5px;
+    object-fit: cover;
+    width: 400px;
+    height: auto;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid #cccccc;  
+    margin: 5px;
+}
+.box img {
+    height: 40vh;
+}
+.img2 {
+   flex-basis: 60%;
+}
+.stołki, .ławki, .pieńki, .inne, .stoliki, .stoły {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    background-color: #ceb79d;
+    flex: 1 1 auto;
+}
+.ławki {
+    background-color: lightslategrey;
+}
+.pieńki {
+    background-color: #cccccc;
+}
+.inne {
+    background-color: rgb(228, 226, 225);
+}

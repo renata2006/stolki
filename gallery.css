@@ -1,0 +1,43 @@
+
+.gallery_container{
+   display: flex;
+   
+}
+.gallery_container div img {
+    height: 200px;
+}
+.gallery_container div {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery_box-image {
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+
+/*
+@media(max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.gallery_aspect {
+    padding-top: calc(100% * 9 /16);
+    position: relative;
+}
+.gallery_image {
+   object-fit: cover;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+

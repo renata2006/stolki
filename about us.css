@@ -1,0 +1,36 @@
+
+.about-us {
+    display: flex;
+    align-items: center;
+}
+.about-us_header {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about-us_paragraph {
+    line-height: 1.9;
+    color: #777777;
+    font-size: 16px;
+}
+@media(max-width:767px){
+    .about-us_paragraph {
+        font-size: 14px;
+    }
+    .about-us_header {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+.about-us_img {
+    width: 40%;
+    max-width: 100%;
+    margin-left: 30px;
+
+}
+@media(max-width:920px){
+    .about-us_img {
+        display: none;
+    }
+}
