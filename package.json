@@ -16,7 +16,5 @@
     "url": "https://github.com/renata2006/stolki/issues"
   },
   "homepage": "https://github.com/renata2006/stolki#readme",
-  "dependencies": {
-    "lightgallery.js": "^1.1.3"
-  }
+  "dependencies": {}
 }
