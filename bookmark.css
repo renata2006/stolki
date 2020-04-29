@@ -1,7 +1,7 @@
 .bookmark {
     background-position: center center;
     background-size: cover;
-    padding: 8vh 5vw;
+    padding: 13vh 5vw;
     text-align: center;
     color: white;
     position: relative;
@@ -21,11 +21,15 @@
     background-image: url(galeria/4.jpg);
 }
 
-.bookmark_header {
+.bookmark_header, .bookmark_header-2 {
     font-size: 80px;
     margin: 0;
     text-transform: uppercase;
 }
+.bookmark_header-2 {
+    transform: rotate(180deg);
+}
+
 @media(max-width:1199px){
     .bookmark_header {
         font-size: 10vw;

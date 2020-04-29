@@ -24,7 +24,9 @@
    margin-top: 10px;
    padding: 3px;
 }
-.main-navigation_menu_item:hover {
+.main-navigation_menu_item:hover,
+.main-navigation_menu_item2:hover,
+.icons:hover {
     border-bottom: 1px solid white;
 }
 
@@ -34,4 +36,16 @@
     text-transform: uppercase;
     font-size: 12px;
  
+}
+.main-navigation_menu_item2 {
+    transform: rotate(180deg);
+    margin-top: 20px;
+    
+}
+.main-navigation_link_2 {
+    color: tomato;
+}
+.icons {
+    max-width: 100%;
+    width: 50px;
 }
