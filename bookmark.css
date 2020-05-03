@@ -1,12 +1,15 @@
 .bookmark {
     background-position: center center;
     background-size: cover;
-    padding: 13vh 5vw;
+    padding: 12vh 5vw;
     text-align: center;
     color: white;
     position: relative;
     z-index: 0;
   
+}
+.bookmark--about-us {
+    background-image: url(galeria/2.jpg);
 }
 .bookmark--oferta {
     background-image: url(galeria/2.jpg);
