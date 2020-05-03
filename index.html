@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="work.css">
   <link rel="stylesheet" href="oferta.css">
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css">
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"></script>
@@ -31,7 +32,7 @@
         </a>
       </div>
 
-      <ul class="main-navigation_menu">
+      <ul class="main-navigation_menu js-main-navigation_menu">
         <li class="main-navigation_menu_item">
           <a href="#" class="main-navigation_link">
             Home
@@ -42,18 +43,14 @@
             O nas
           </a>
         </li>
-        <li class="main-navigation_menu_item">
-          <a href="#oferta" class="main-navigation_link">
-            oferta
-          </a>
-        </li>
+    
         <li class="main-navigation_menu_item">
           <a href="#galeria" class="main-navigation_link">
             work
           </a>
         </li>
-        <li class="main-navigation_menu_item2">
-          <a href="#work" class="main-navigation_link_2">
+        <li class="main-navigation_menu_item">
+          <a href="#work" class="main-navigation_link-2">
             work
           </a>
         </li>
@@ -62,30 +59,55 @@
             Kontakt
           </a>
         </li>
-        <li>
-          <a href="https://www.facebook.com/stolkdrewniane/" target="_blank"><img class="icons" src="https://img.icons8.com/color/48/000000/facebook-circled.png" alt="facebbok"></a>
+        <li class="main-navigation_menu_item">
+          <a href="https://www.facebook.com/stolkdrewniane/" target="_blank"><img class="main-navigation_menu-icons"
+              src="https://img.icons8.com/color/48/000000/facebook-circled.png" alt="facebbok"></a>
         </li>
-
       </ul>
+      <button class="main_navigation_mobile-button js-main_navigation_mobile-button">
+        <img class="main_navigation_mobile-button-image" src="https://img.icons8.com/android/24/000000/menu.png" />
+      </button>
     </div>
-
   </nav>
-  <section class="main_banner">
-    <a href="#about-us" class="main_baner_button">
+  <script src="js/main_navigation.js"></script>
+
+  <section class="container_main_banner">
+    <div class="container_banner-text">
+      <h3 class="container_banner-header">nie jesteśmy zwykłymi stołkami</h3>
+      <p class="container_banner-paragraph"> potrafimy stworzyć niespotykany klimat</p>
+      <p class="container_banner-paragraph"> jestesmy wyjątkowe, niecodzienne, ...</p>
+    </div>
+    <a href="#about-us" class="container_main_banner_button">
       poznaj nas lepiej
     </a>
   </section>
 
-  <div class="container">
-    <section class="about-us" id="about-us">
-      <div class="about-us_text">
-        <h3 class="about-us_header">nie jesteśmy zwykłymi stołkami</h3>
-        <p class="about-us_paragraph"> potrafimy stworzyć niespotykany klimat</p>
-        <p class="about-us_paragraph"> jestesmy wyjątkowe, niecodzienne, ...</p>
-      </div>
-      <img class="about-us_img" src="/galeria/3.jpg" alt="">
-    </section>
+  <section class="bookmark bookmark--about-us" id="about-us">
+    <h2 class="bookmark_header">
+      o nas
+    </h2>
+    <p class="bookmark_paragraph">
+      spójrz, co napisałem :)
+    </p>
+  </section>
+
+
+  <div class="container_about-us" id="about-us">
+    <div class="container_about-us-text">
+      <h1 class="container_about-us-header">Zajmuję się ręcznym wykonywaniem stołków drewnianych i bardzo lubię to
+        robić, ... naprawdę :)</h1>
+      <p class="container_about-us-paragraph">
+        Tworzę pojedyńcze egzemplarze stołków, każdy jest inny i ma swój
+        indywidualny charakter. <br>
+        Do swoich prac najczęściej wykorzystuję surowe drewno, gałęzie, pnie i stare drewno z odzysku. <br>
+        Stołki wykonuję według własnych pomysłów lub według pomysłów (najczęściej zdjęć) przesyłanych przez
+        zamawiających.
+        <br>Wykonuję również inne przedmioty z drewna np. ławki, stoły, blaty, półki, szafki, regały, ramy do luster i
+        obrazów i inne wyroby.
+        <br>Zapraszam do zapoznania się z moimi pracami. </p>
+    </div>
   </div>
+
   <section class="bookmark bookmark--oferta" id="oferta">
     <h2 class="bookmark_header">
       oferta
@@ -93,23 +115,6 @@
     <p class="bookmark_paragraph">
       spójrz, co dla ciebie przygotowaliśmy
     </p>
-  </section>
-  <section class="oferta">
-    <div class="oferta_column">
-      <h3 class="oferta_header">
-        stołki drewniane
-      </h3>
-      <ul class="ofera_list">
-        <li class="oferta_list-ithem">
-          <div class="oferta_position-one">
-            <h4>stołki drewniane</h4>
-          </div>
-          <div class="oferta_position-twoo">
-            <p>ręcznie wykonane,</p>
-          </div>
-        </li>
-      </ul>
-    </div>
   </section>
 
 
@@ -121,9 +126,7 @@
     <p class="bookmark_paragraph">
       spójrz, jak wyglądają nasze stołki
     </p>
-  </section>
-  <div class="container">
-    <div class="gallery_container">
+    <div class="container_gallery">
       <div>
         <a href="#stool"><img src="galeria/stolki/stolki33.jpg" alt=""></a>
         <p>stołki drewniane</p>
@@ -137,19 +140,20 @@
         <p>pieńki drewniane</p>
       </div>
       <div>
-        <img src="galeria/stoły/5 (1).jpg" alt="stołki">
+        <a href="#table"> <img src="galeria/stoly/stol1.jpg" alt=""></a>
         <p>stoły drewniane</p>
       </div>
       <div>
-        <img src="galeria/ławki/3 (2).jpg" alt="stołki">
+        <a href="#benches"><img src="galeria/lawki/lawki1.jpg" alt=""></a>
         <p>ławki drewniane</p>
       </div>
       <div>
-        <img src="galeria/inne/6 (1).jpg" alt="stołki">
+        <a href="#other"><img src="galeria/inne/inne25.jpg" alt=""></a>
         <p>inne wyroby z drewna</p>
       </div>
     </div>
-  </div>
+  </section>
+
   <div class="gallery_box" id="stool">
     <h1 class="gallery_box-text">stołki drewniane</h1>
     <div id="lightgallery" class="gallery_box-image">
@@ -271,6 +275,9 @@
       <a href="galeria/stolki/stolki39.jpg">
         <img src="galeria/stolki/stolki39.jpg" alt="">
       </a>
+      <a href="galeria/stolki/stolki40.jpg">
+        <img src="galeria/stolki/stolki40.jpg" alt="">
+      </a>
     </div>
   </div>
 
@@ -356,8 +363,8 @@
       <a href="galeria/stoliki/stoliki26.jpg">
         <img src="galeria/stoliki/stoliki26.jpg" alt="">
       </a>
-      <a href="galeria/stoliki/stoliki27.JPG">
-        <img src="galeria/stoliki/stoliki27.JPG" alt="">
+      <a href="galeria/stolki/stolki27.jpg">
+        <img src="galeria/stolki/stolki27.jpg" alt="">
       </a>
     </div>
   </div>
@@ -486,6 +493,221 @@
     </div>
   </div>
 
+
+  <div class="gallery_box" id="table">
+    <h1 class="gallery_box-text">stoły drewniane</h1>
+    <div id="lightgallery" class="gallery_box-image">
+
+      <a href="galeria/stoly/stol1.jpg">
+        <img src="galeria/stoly/stol1.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol2.png">
+        <img src="galeria/stoly/stol2.png" alt="">
+      </a>
+      <a href="galeria/stoly/stol3.jpg">
+        <img src="galeria/stoly/stol3.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol4.jpg">
+        <img src="galeria/stoly/stol4.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol5.jpg">
+        <img src="galeria/stoly/stol5.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol6.jpg">
+        <img src="galeria/stoly/stol6.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol7.jpg">
+        <img src="galeria/stoly/stol7.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol8.jpg">
+        <img src="galeria/stoly/stol8.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol9.jpg">
+        <img src="galeria/stoly/stol9.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol10.jpg">
+        <img src="galeria/stoly/stol10.jpg" alt="">
+      </a>
+      <a href="galeria/stoly/stol11.jpg">
+        <img src="galeria/stoly/stol11.jpg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="gallery_box" id="benches">
+    <h1 class="gallery_box-text">ławki drewniane</h1>
+    <div id="lightgallery" class="gallery_box-image">
+
+      <a href="galeria/lawki/lawki1.jpg">
+        <img src="galeria/lawki/lawki1.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki2.jpg">
+        <img src="galeria/lawki/lawki2.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki3.jpg">
+        <img src="galeria/lawki/lawki3.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki4.jpg">
+        <img src="galeria/lawki/lawki4.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki5.jpg">
+        <img src="galeria/lawki/lawki5.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki6.jpg">
+        <img src="galeria/lawki/lawki6.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki7.jpg">
+        <img src="galeria/lawki/lawki7.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki8.jpg">
+        <img src="galeria/lawki/lawki8.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki9.jpg">
+        <img src="galeria/lawki/lawki9.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki10.jpg">
+        <img src="galeria/lawki/lawki10.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki11.jpg">
+        <img src="galeria/lawki/lawki11.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki12.jpg">
+        <img src="galeria/lawki/lawki12.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki13.jpg">
+        <img src="galeria/lawki/lawki13.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki14.jpg">
+        <img src="galeria/lawki/lawki14.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki15.jpg">
+        <img src="galeria/lawki/lawki15.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki16.jpg">
+        <img src="galeria/lawki/lawki16.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki17.jpg">
+        <img src="galeria/lawki/lawki17.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki18.jpg">
+        <img src="galeria/lawki/lawki18.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki19.jpg">
+        <img src="galeria/lawki/lawki19.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki20.jpg">
+        <img src="galeria/lawki/lawki20.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki21.jpg">
+        <img src="galeria/lawki/lawki21.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki22.jpg">
+        <img src="galeria/lawki/lawki22.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki23.jpg">
+        <img src="galeria/lawki/lawki23.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki24.jpg">
+        <img src="galeria/lawki/lawki24.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki25.jpg">
+        <img src="galeria/lawki/lawki25.jpg" alt="">
+      </a>
+      <a href="galeria/lawki/lawki26.jpg">
+        <img src="galeria/lawki/lawki26.jpg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="gallery_box" id="other">
+    <h1 class="gallery_box-text">inne wyroby drewniane</h1>
+    <div id="lightgallery" class="gallery_box-image">
+
+      <a href="galeria/inne/inne1.jpg">
+        <img src="galeria/inne/inne1.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne2.jpg">
+        <img src="galeria/inne/inne2.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne3.jpg">
+        <img src="galeria/inne/inne3.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne4.jpg">
+        <img src="galeria/inne/inne4.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne5.jpg">
+        <img src="galeria/inne/inne5.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne6.jpg">
+        <img src="galeria/inne/inne6.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne7.jpg">
+        <img src="galeria/inne/inne7.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne8.jpg">
+        <img src="galeria/inne/inne8.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne9.jpg">
+        <img src="galeria/inne/inne9.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne10.jpg">
+        <img src="galeria/inne/inne10.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne11.jpg">
+        <img src="galeria/inne/inne11.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne12.jpg">
+        <img src="galeria/inne/inne12.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne13.jpg">
+        <img src="galeria/inne/inne13.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne14.jpg">
+        <img src="galeria/inne/inne14.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne15.jpg">
+        <img src="galeria/inne/inne15.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne16.jpg">
+        <img src="galeria/inne/inne16.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne17.jpg">
+        <img src="galeria/inne/inne17.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne18.jpg">
+        <img src="galeria/inne/inne18.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne19.jpg">
+        <img src="galeria/inne/inne19.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne20.jpg">
+        <img src="galeria/inne/inne20.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne21.jpg">
+        <img src="galeria/inne/inne21.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne22.jpg">
+        <img src="galeria/inne/inne22.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne23.jpg">
+        <img src="galeria/inne/inne23.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne24.jpg">
+        <img src="galeria/inne/inne24.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne25.jpg">
+        <img src="galeria/inne/inne25.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne26.jpg">
+        <img src="galeria/inne/inne26.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne27.jpg">
+        <img src="galeria/inne/inne27.jpg" alt="">
+      </a>
+      <a href="galeria/inne/inne28.jpg">
+        <img src="galeria/inne/inne28.jpg" alt="">
+      </a>
+    </div>
+  </div>
+
   <section class="bookmark bookmark--work" id="work">
     <h2 class="bookmark_header-2">
       work
@@ -495,7 +717,7 @@
     </p>
   </section>
   <div class="gallery_box" id="work">
-    <h1 class="gallery_box-text">zdjęcia <span>inne</span> niż pozostałe :)</h1>
+    <h1 class="gallery_box-text">inaczej niż zwykle</h1>
     <div id="lightgallery" class="gallery_box-image">
 
       <a href="galeria/work/work1.jpg">
@@ -552,11 +774,14 @@
       <a href="galeria/work/work18.jpg">
         <img src="galeria/work/work18.jpg" alt="">
       </a>
+      <a href="galeria/work/work19.jpg">
+        <img src="galeria/work/work19.jpg" alt="">
+      </a>
+      <a href="galeria/work/work20.jpg">
+        <img src="galeria/work/work20.jpg" alt="">
+      </a>
     </div>
   </div>
-
-
-
 
   <section class="bookmark bookmark--contact" id="contact">
     <h2 class="bookmark_header">
@@ -566,7 +791,28 @@
       spójrz, jak sie z nami skontaktować
     </p>
   </section>
-
+  <div class="container_contact">
+    <div class="container_contact-box">
+      <div class="container_contact-box-mail">
+        <img src="https://img.icons8.com/ios/50/000000/important-mail.png" />
+        <p>stolkidrewniane@gmail.com</p>
+      </div>
+      <div class="container_contact-box-telephon">
+        <img src="https://img.icons8.com/carbon-copy/100/000000/phone-not-being-used.png" />
+        <p>883 106 888 </p>
+      </div>
+    </div>
+    <div class="container_contact-box-text">
+      <p>Jeśli nie znalazłeś na naszej stronie informacji, których potrzebujesz,
+        <br> wyslij maila lub zadzwoń. <br> Chętnie z Tobą porozmawiam i odpowiem na wszystkie pytania.
+      </p>
+    </div>
+    <div class="container_contact-box-img">
+      <img src="galeria/2.jpg" alt="">
+      <img src="galeria/3.jpg" alt="">
+    </div>
+  </div>
+  </section>
   <script type="text/javascript">
     lightGallery(document.getElementById('lightgallery'), {
       thumbnail: true
