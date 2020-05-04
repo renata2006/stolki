@@ -4,100 +4,556 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>stołki drewniane</title>
+    <meta name="descripyion" content="stołki drewniane" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
-    <title>Stołki drewniane</title>
-    <link rel="stylesheet" href="css/start.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/galeria.css" />
-    <link rel="stylesheet" href="css/products.css" />
-    <!-- KOMENTARZ ZEBY ZROZUMIEC GITA -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main_banner.css" />
+    <link rel="stylesheet" href="container.css" />
+    <link rel="stylesheet" href="about us.css" />
+    <link rel="stylesheet" href="main-navigation.css" />
+    <link rel="stylesheet" href="bookmark.css" />
+    <link rel="stylesheet" href="oferta.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="arrow.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"
+    />
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-162997205-1"
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-162997205-1", {
-        page_path: location.pathname + location.hash,
-      });
-    </script>
   </head>
 
   <body>
-    <nav class="navigation">
-      <ul class="navigation_box js-navigation_box">
-        <li class="navigation_link"><a href="start.html">home</a></li>
-        <li class="navigation_link"><a href="about_as.html">o nas</a></li>
-        <li class="navigation_link"><a href="index.html">galeria</a></li>
-        <li class="navigation_link up">
-          <a href="galeria_twoo.html">galeria</a>
-        </li>
-        <li></li>
-        <li class="navigation_link"><a href="kontakt.html">kontakt</a></li>
-        <li class="navigation_link">
-          <a href="https://www.facebook.com/stolkdrewniane/" target="_blank">
+    <nav class="main-navigation">
+      <div class="main-navigation_inner">
+        <div class="main-navigation_logo">
+          <a href="#" class="main-navigation_logo_link">
             <img
-              class="ithem"
-              src="https://img.icons8.com/color/48/000000/facebook-circled.png"
-              alt="facebook"
-          /></a>
-        </li>
-      </ul>
-      <button class="navigation_mobile_button js-navigation_mobile_button">
-        <img
-          src="https://img.icons8.com/material-rounded/24/000000/menu.png"
-          alt="otwórz/zamknij nawigację"
-          class="navigation_mobile_button_img"
-        />
-      </button>
-    </nav>
+              src="galeria/3.jpg"
+              alt="logo"
+              class="main-navigation_logo_images"
+            />
+          </a>
+        </div>
 
-    <section class="gallery_box">
-      <div class="gallery_box_other">
-        <a href="stool.html"><img src="galeria/stołki/1 (33).jpg" alt="" /></a>
-        <p>stołki drewniane - niepowtarzalne</p>
+        <ul class="main-navigation_menu js-main-navigation_menu">
+          <li class="main-navigation_menu_item">
+            <a href="#" class="main-navigation_link">
+              Home
+            </a>
+          </li>
+          <li class="main-navigation_menu_item">
+            <a href="#about-us" class="main-navigation_link">
+              O nas
+            </a>
+          </li>
+
+          <li class="main-navigation_menu_item">
+            <a href="#galeria" class="main-navigation_link">
+              work
+            </a>
+          </li>
+          <li class="main-navigation_menu_item">
+            <a href="#work" class="main-navigation_link-2">
+              work
+            </a>
+          </li>
+          <li class="main-navigation_menu_item">
+            <a href="#contact" class="main-navigation_link">
+              Kontakt
+            </a>
+          </li>
+          <li class="main-navigation_menu_item">
+            <a href="https://www.facebook.com/stolkdrewniane/" target="_blank"
+              ><img
+                class="main-navigation_menu-icons"
+                src="https://img.icons8.com/color/48/000000/facebook-circled.png"
+                alt="facebbok"
+            /></a>
+          </li>
+        </ul>
+        <button
+          class="main_navigation_mobile-button js-main_navigation_mobile-button"
+        >
+          <img
+            class="main_navigation_mobile-button-image"
+            src="https://img.icons8.com/android/24/000000/menu.png"
+          />
+        </button>
       </div>
-      <div class="gallery_box_other">
-        <a href="tabl_small.html"
-          ><img src="galeria/stoliki/2 (17).jpg" alt=""
-        /></a>
-        <p>stoliki drewniane - unikalne</p>
+    </nav>
+    <script src="js/main_navigation.js"></script>
+
+    <section class="container_main_banner">
+      <div class="container_banner-text">
+        <h3 class="container_banner-header">nie jesteśmy zwykłymi stołkami</h3>
+        <p class="container_banner-paragraph">
+          potrafimy stworzyć niespotykany klimat
+        </p>
+        <p class="container_banner-paragraph">
+          jestesmy wyjątkowe, niecodzienne, ...
+        </p>
       </div>
-      <div class="gallery_box_other">
-        <a href="bench.html">
-          <img src="galeria/ławki/3 (5).jpg" alt="" />
-        </a>
-        <p>ławki drewniane - indywidualne</p>
+      <a href="#about-us" class="container_main_banner_button">
+        poznaj nas lepiej
+      </a>
+    </section>
+
+    <section class="bookmark bookmark--about-us" id="about-us">
+      <h2 class="bookmark_header">
+        o nas
+      </h2>
+      <p class="bookmark_paragraph">
+        spójrz, co napisałem :)
+      </p>
+    </section>
+
+    <div class="container_about-us" id="about-us">
+      <div class="container_about-us-text">
+        <h1 class="container_about-us-header">
+          Zajmuję się ręcznym wykonywaniem stołków drewnianych i bardzo lubię to
+          robić, ... naprawdę :)
+        </h1>
+        <p class="container_about-us-paragraph">
+          Tworzę pojedyńcze egzemplarze stołków, każdy jest inny i ma swój
+          indywidualny charakter. <br />
+          Do swoich prac najczęściej wykorzystuję surowe drewno, gałęzie, pnie i
+          stare drewno z odzysku. <br />
+          Stołki wykonuję według własnych pomysłów lub według pomysłów
+          (najczęściej zdjęć) przesyłanych przez zamawiających.
+          <br />Wykonuję również inne przedmioty z drewna np. ławki, stoły,
+          blaty, półki, szafki, regały, ramy do luster i obrazów i inne wyroby.
+          <br />Zapraszam do zapoznania się z moimi pracami.
+        </p>
       </div>
-      <div class="gallery_box_other">
-        <a href="stump.html">
-          <img src="galeria/pieńki/4 (10).jpg" alt="" />
-        </a>
-        <p>pieńki drewniane - nietypowe</p>
-      </div>
-      <div class="gallery_box_other">
-        <a href="tabl_big.html">
-          <img src="galeria/stoły/5 (1).jpg" alt="" />
-        </a>
-        <p>stoły drewniane - jedyne w swoim rodzaju</p>
-      </div>
-      <div class="gallery_box_other">
-        <a href="other.html">
-          <img src="galeria/inne/6 (2).jpg" alt="" />
-        </a>
-        <p>półki,szafki,meble drewniane</p>
+    </div>
+
+    <section class="bookmark bookmark--oferta" id="oferta">
+      <h2 class="bookmark_header">
+        oferta
+      </h2>
+      <p class="bookmark_paragraph">
+        spójrz, co dla ciebie przygotowaliśmy
+      </p>
+    </section>
+
+    <section class="bookmark bookmark--gallery" id="galeria">
+      <h2 class="bookmark_header">
+        work
+      </h2>
+      <p class="bookmark_paragraph">
+        spójrz, jak wyglądają nasze stołki
+      </p>
+      <div class="container_gallery">
+        <div>
+          <a href="#stool"><img src="galeria/stolki/stolki33.jpg" alt="" /></a>
+          <p>stołki drewniane</p>
+        </div>
+        <div>
+          <a href="#tables"
+            ><img src="galeria/stoliki/stoliki9.jpg" alt=""
+          /></a>
+          <p>stoliki drewniane</p>
+        </div>
+        <div>
+          <a href="#stumps"
+            ><img src="galeria/pienki/pieniek26.jpg" alt=""
+          /></a>
+          <p>pieńki drewniane</p>
+        </div>
+        <div>
+          <a href="#table"> <img src="galeria/stoly/stol1.jpg" alt="" /></a>
+          <p>stoły drewniane</p>
+        </div>
+        <div>
+          <a href="#benches"><img src="galeria/lawki/lawki1.jpg" alt="" /></a>
+          <p>ławki drewniane</p>
+        </div>
+        <div>
+          <a href="#other"><img src="galeria/inne/inne14.jpg" alt="" /></a>
+          <p>inne wyroby z drewna</p>
+        </div>
       </div>
     </section>
-    <script src="js/navigation.js"></script>
+
+    <div class="gallery_box" id="stool">
+      <h1 class="gallery_box-text">stołki drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/stolki/stolki1.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki2.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki3.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki4.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki5.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki6.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki7.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki8.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki9.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki10.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki11.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki12.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki13.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki14.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki15.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki16.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki17.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki18.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki19.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki20.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki21.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki22.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki23.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki24.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki25.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki26.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki27.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki28.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki29.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki30.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki31.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki32.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki33.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki34.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki35.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki36.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki37.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki38.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki39.jpg" alt="" /></div>
+        <div><img src="galeria/stolki/stolki40.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="gallery_box" id="tables">
+      <h1 class="gallery_box-text">stoliki drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/stoliki/stoliki1.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki2.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki3.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki4.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki5.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki6.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki7.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki8.jpg" alt="" /></div>
+        <div><img src="galeria/stoliki/stoliki9.jpg" alt="" /></div>
+        <div>
+          <img src="galeria/stoliki/stoliki10.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki11.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki12.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki13.JPG" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki14.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki15.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki16.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki17.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki18.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki19.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki20.jpg" alt="" />
+        </div>
+        <div><img src="galeria/stoliki/stoliki21.jpg" alt="" /></div>
+        <div>
+          <img src="galeria/stoliki/stoliki22.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki23.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki24.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki25.jpg" alt="" />
+        </div>
+        <div>
+          <img src="galeria/stoliki/stoliki26.jpg" alt="" />
+        </div>
+        <div><img src="galeria/stolki/stolki27.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="gallery_box" id="stumps">
+      <h1 class="gallery_box-text">pieńki drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/pienki/pieniek1.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek2.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek3.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek4.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek5.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek6.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek7.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek8.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek9.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek10.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek11.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek12.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek13.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek14.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek15.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek16.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek17.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek18.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek19.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek20.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek21.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek22.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek23.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek24.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek25.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek26.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek27.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek28.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek29.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek30.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek31.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek32.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek33.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek34.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek35.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek36.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek37.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek38.jpg" alt="" /></div>
+        <div><img src="galeria/pienki/pieniek39.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="gallery_box" id="table">
+      <h1 class="gallery_box-text">stoły drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/stoly/stol1.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol2.png" alt="" /></div>
+        <div><img src="galeria/stoly/stol3.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol4.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol5.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol6.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol7.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol8.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol9.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol10.jpg" alt="" /></div>
+        <div><img src="galeria/stoly/stol11.jpg" alt="" /></div>
+      </div>
+    </div>
+    <div class="gallery_box" id="benches">
+      <h1 class="gallery_box-text">ławki drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/lawki/lawki1.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki2.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki3.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki4.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki5.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki6.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki7.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki8.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki9.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki10.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki11.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki12.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki13.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki14.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki15.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki16.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki17.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki18.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki19.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki20.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki21.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki22.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki23.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki24.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki25.jpg" alt="" /></div>
+        <div><img src="galeria/lawki/lawki26.jpg" alt="" /></div>
+      </div>
+    </div>
+    <div class="gallery_box" id="other">
+      <h1 class="gallery_box-text">inne wyroby drewniane</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/inne/inne1.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne2.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne3.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne4.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne5.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne6.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne7.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne8.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne9.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne10.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne11.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne12.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne13.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne14.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne15.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne16.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne17.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne18.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne19.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne20.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne21.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne22.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne23.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne24.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne25.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne26.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne27.jpg" alt="" /></div>
+        <div><img src="galeria/inne/inne28.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <section class="bookmark bookmark--work" id="work">
+      <h2 class="bookmark_header-2">
+        work
+      </h2>
+      <p class="bookmark_paragraph">
+        spójrz,trochę pod innym kątem
+      </p>
+    </section>
+    <div class="gallery_box" id="work">
+      <h1 class="gallery_box-text">inaczej niż zwykle</h1>
+      <div id="lightgallery" class="gallery_box-image">
+        <div><img src="galeria/work/work1.jpg" alt="" /></div>
+        <div><img src="galeria/work/work2.jpg" alt="" /></div>
+        <div><img src="galeria/work/work3.jpg" alt="" /></div>
+        <div><img src="galeria/work/work4.jpg" alt="" /></div>
+        <div><img src="galeria/work/work5.jpg" alt="" /></div>
+        <div><img src="galeria/work/work6.jpg" alt="" /></div>
+        <div><img src="galeria/work/work7.jpg" alt="" /></div>
+        <div><img src="galeria/work/work8.jpg" alt="" /></div>
+        <div><img src="galeria/work/work9.jpg" alt="" /></div>
+        <div><img src="galeria/work/work10.jpg" alt="" /></div>
+        <div><img src="galeria/work/work11.jpg" alt="" /></div>
+        <div><img src="galeria/work/work12.jpg" alt="" /></div>
+        <div><img src="galeria/work/work13.jpg" alt="" /></div>
+        <div><img src="galeria/work/work14.jpg" alt="" /></div>
+        <div><img src="galeria/work/work15.jpg" alt="" /></div>
+        <div><img src="galeria/work/work16.jpg" alt="" /></div>
+        <div><img src="galeria/work/work17.jpg" alt="" /></div>
+        <div><img src="galeria/work/work18.jpg" alt="" /></div>
+        <div><img src="galeria/work/work19.jpg" alt="" /></div>
+        <div><img src="galeria/work/work20.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <section class="bookmark bookmark--contact" id="contact">
+      <h2 class="bookmark_header">
+        kontakt
+      </h2>
+      <p class="bookmark_paragraph">
+        spójrz, jak sie z nami skontaktować
+      </p>
+    </section>
+    <div class="container_contact">
+      <div class="container_contact-box">
+        <div class="container_contact-box-mail">
+          <img src="https://img.icons8.com/ios/50/000000/important-mail.png" />
+          <p>stolkidrewniane@gmail.com</p>
+        </div>
+        <div class="container_contact-box-telephon">
+          <img
+            src="https://img.icons8.com/carbon-copy/100/000000/phone-not-being-used.png"
+          />
+          <p>883 106 888</p>
+        </div>
+      </div>
+      <div class="container_contact-box-text">
+        <p>
+          Jeśli nie znalazłeś na naszej stronie informacji, których
+          potrzebujesz, <br />
+          wyslij maila lub zadzwoń. <br />
+          Chętnie z Tobą porozmawiam i odpowiem na wszystkie pytania.
+        </p>
+      </div>
+      <div class="container_contact-box-img">
+        <img src="galeria/2.jpg" alt="" />
+        <img src="galeria/3.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-toolbar">
+        <span>4/4</span>
+        <button class="close" onclick="closeModal()">
+          <svg height="40" width="40">
+            <line
+              x1="10"
+              y1="10"
+              x2="40"
+              y2="40"
+              stroke="#FFFFFF"
+              stroke-width="1"
+            />
+            <line
+              x1="40"
+              y1="0"
+              x2="0"
+              y2="40"
+              stroke="#FFFFFF"
+              stroke-width="1"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-content">
+        <button class="arrow left" onclick="prevImage()">
+          <svg width="30px" height="40px" viewBox="0 0 50 80">
+            <polyline
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              points="
+        45.63,75.8 0.375,38.087 45.63,0.375 "
+            />
+          </svg>
+        </button>
+        <button class="arrow right" onclick="nextImage()">
+          <svg width="30px" height="40px" viewBox="0 0 50 80">
+            <polyline
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              points="
+        0.375,0.375 45.63,38.087 0.375,75.8 "
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./gallery.js"></script>
+    <script>
+      const galleries = document.querySelectorAll("#lightgallery");
+      galleries.forEach((gallery) => {
+        Array.from(gallery.children).forEach((image, index) => {
+          image.addEventListener(
+            "click",
+            showModal.bind(this, gallery.children, image, index)
+          );
+        });
+      });
+    </script>
   </body>
 </html>

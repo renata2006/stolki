@@ -1,0 +1,50 @@
+.modal button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+svg {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.right {
+  right: 25px;
+}
+.left {
+  left: 25px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 5px;
+}
+
+.left:hover polyline,
+.left:active polyline {
+  stroke-width: 8;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:active polyline {
+  stroke-width: 8;
+  transition: all 100ms ease-in-out;
+}
+
+.close:hover line,
+.close:active line {
+  stroke-width: 2;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}

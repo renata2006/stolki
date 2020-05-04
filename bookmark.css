@@ -1,0 +1,66 @@
+.bookmark {
+    background-position: center center;
+    background-size: cover;
+    padding: 12vh 5vw;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 0;
+  
+}
+.bookmark--about-us {
+    background-image: url(galeria/2.jpg);
+}
+.bookmark--oferta {
+    background-image: url(galeria/2.jpg);
+}
+.bookmark--gallery {
+    background-image: url(galeria/3.jpg);
+}
+.bookmark--work {
+    background-image: url(galeria/2.jpg);
+}
+.bookmark--contact {
+    background-image: url(galeria/4.jpg);
+}
+
+.bookmark_header, .bookmark_header-2 {
+    font-size: 80px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.bookmark_header-2 {
+    transform: rotate(180deg);
+}
+
+@media(max-width:1199px){
+    .bookmark_header {
+        font-size: 10vw;
+    }
+}
+.bookmark_header::after,
+.bookmark_header::before {
+    content: "-";
+    font-weight: normal;
+}
+.bookmark_paragraph {
+    font-size: 24px;
+    
+}
+
+@media(max-width:767px){
+    .bookmark_paragraph {
+        font-size: 16px;
+    }
+}
+
+.bookmark::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}

@@ -1,0 +1,107 @@
+
+.main-navigation {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);   
+}
+.main-navigation_logo_images {
+    width: 100px;
+}
+@media(max-width: 991px) {
+.main-navigation_logo_images {
+    display: none;
+    }
+}
+
+.main-navigation_menu {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s;
+    transition-property: opacity, transform;
+  
+}
+@media(max-width: 991px) {
+    .main-navigation_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #777777;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);   
+        max-width: 100%;   
+    }
+}
+@media(max-width: 991px) {
+    .main-navigation_menu--open { 
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
+}
+.main-navigation_menu_item {
+   margin-top: 10px;
+   padding: 2px;
+}
+.main-navigation_menu_item:hover,
+.main-navigation_menu_item2:hover,
+.main-navigation_menu-icons:hover {
+    border-bottom: 1px solid white;
+}
+
+@media(max-width: 991px) {
+    .main-navigation_menu_item:hover,
+    .main-navigation_menu_item2:hover,
+    .main-navigation_menu-icons:hover {
+      border-bottom: none;
+    }
+}
+
+.main-navigation_link, .main-navigation_link-2 {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.main-navigation_link-2 {
+    color: red;
+}
+
+@media(max-width: 991px) {
+    .main-navigation_link,
+    .main-navigation_link-2 {
+        font-size: 20px;
+    }
+}
+.main-navigation_menu-icons { 
+    width: 80%;
+}
+@media(max-width: 991px) {
+    .main-navigation_menu-icons {
+        width: 80px;;
+    }
+}
+.main_navigation_mobile-button {
+    display: none;
+}
+@media(max-width: 991px) {
+    .main_navigation_mobile-button {
+        display: unset;
+        background: white;
+        border: none;
+        padding: 0;
+    }
+    .main_navigation_mobile-button-image {
+       width: 30px;
+       display: block;
+    }
+}
