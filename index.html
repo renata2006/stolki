@@ -28,6 +28,21 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"
     ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162997205-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-162997205-1", {
+        page_path: location.pathname + location.hash,
+      });
+    </script>
   </head>
 
   <body>
