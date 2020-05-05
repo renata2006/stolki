@@ -1,0 +1,69 @@
+.container_main_banner {
+  background-image: url(../galeria/1.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_main_banner_button {
+  border: 2px solid white;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 30vh;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.main_baner_button:hover {
+  background-color: black;
+}
+@media (max-width: 420px) {
+  .main_banner {
+    background-position: center center;
+  }
+}
+
+.container_banner-header {
+  text-transform: uppercase;
+  font-size: 46px;
+}
+.container_banner-paragraph {
+  line-height: 1.5;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 840px) {
+  .container_banner-text {
+    margin-top: 5vh;
+  }
+  .container_banner-header {
+    font-size: 22px;
+  }
+  .container_banner-paragraph {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .container_banner-header {
+    font-size: 20px;
+  }
+  .container_banner-paragraph {
+    font-size: 18px;
+  }
+}
+@media (max-width: 330px) {
+  .container_banner-header {
+    font-size: 18px;
+  }
+  .container_banner-paragraph {
+    font-size: 16px;
+  }
+}

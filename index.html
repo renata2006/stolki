@@ -2,6 +2,10 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Tworzę recznię dopasowane do potrzeb klienta wyroby z drewna: stołki, pieńki, ławki i wiele wiecej"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>stołki drewniane</title>
@@ -10,24 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main_banner.css" />
-    <link rel="stylesheet" href="container.css" />
-    <link rel="stylesheet" href="about us.css" />
-    <link rel="stylesheet" href="main-navigation.css" />
-    <link rel="stylesheet" href="bookmark.css" />
-    <link rel="stylesheet" href="oferta.css" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="arrow.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.1/dist/js/lightgallery.min.js"
-    ></script>
+    <link rel="stylesheet" href="dist/style.min.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-162997205-1"
@@ -86,7 +73,10 @@
             </a>
           </li>
           <li class="main-navigation_menu_item">
-            <a href="https://www.facebook.com/stolkdrewniane/" target="_blank"
+            <a
+              href="https://www.facebook.com/stolkdrewniane/"
+              target="_blank"
+              rel="noopener"
               ><img
                 class="main-navigation_menu-icons"
                 src="https://img.icons8.com/color/48/000000/facebook-circled.png"
@@ -104,7 +94,6 @@
         </button>
       </div>
     </nav>
-    <script src="js/main_navigation.js"></script>
 
     <section class="container_main_banner">
       <div class="container_banner-text">
@@ -172,7 +161,7 @@
             ><img
               class="lazyload"
               data-src="galeria/stolki/stolki33.jpg"
-              alt=""
+              alt="move to section with stool images"
           /></a>
           <p>stołki drewniane</p>
         </div>
@@ -181,7 +170,7 @@
             ><img
               class="lazyload"
               data-src="galeria/stoliki/stoliki9.jpg"
-              alt=""
+              alt="move to section with tables images"
           /></a>
           <p>stoliki drewniane</p>
         </div>
@@ -190,24 +179,34 @@
             ><img
               class="lazyload"
               data-src="galeria/pienki/pieniek26.jpg"
-              alt=""
+              alt="move to section with stumps images"
           /></a>
           <p>pieńki drewniane</p>
         </div>
         <div>
           <a href="#table">
-            <img class="lazyload" data-src="galeria/stoly/stol1.jpg" alt=""
+            <img
+              class="lazyload"
+              data-src="galeria/stoly/stol1.jpg"
+              alt="move to section with tables images"
           /></a>
           <p>stoły drewniane</p>
         </div>
         <div>
           <a href="#benches"
-            ><img class="lazyload" data-src="galeria/lawki/lawki1.jpg" alt=""
+            ><img
+              class="lazyload"
+              data-src="galeria/lawki/lawki1.jpg"
+              alt="move to section with benches images"
           /></a>
           <p>ławki drewniane</p>
         </div>
         <div>
-          <a href="#other"><img src="galeria/inne/inne14.jpg" alt="" /></a>
+          <a href="#other"
+            ><img
+              src="galeria/inne/inne14.jpg"
+              alt="move to section with others images"
+          /></a>
           <p>inne wyroby z drewna</p>
         </div>
       </div>
@@ -215,7 +214,7 @@
 
     <div class="gallery_box" id="stool">
       <h1 class="gallery_box-text">stołki drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture>
             <source data-srcset="galeriawebp/stolki/stolki1.webp" alt="" />
@@ -621,161 +620,240 @@
 
     <div class="gallery_box" id="tables">
       <h1 class="gallery_box-text">stoliki drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
-          <picture
-            ><source data-srcset="galeriawebp/stoliki/stoliki1.webp" />
-            <img src="galeria/stoliki/stoliki1.jpg" class="lazyload" alt=""
-          /></picture>
+          <picture>
+            <source data-srcset="galeriawebp/stoliki/stoliki1.webp" alt="" />
+            <img
+              data-src="galeria/stoliki/stoliki1.jpg"
+              class="lazyload"
+              alt=""
+            />
+          </picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki2.webp" />
-            <img src="galeria/stoliki/stoliki2.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki2.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki3.webp" />
-            <img src="galeria/stoliki/stoliki3.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki3.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki4.webp" />
-            <img src="galeria/stoliki/stoliki4.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki4.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki5.webp" />
-            <img src="galeria/stoliki/stoliki5.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki5.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki6.webp" />
-            <img src="galeria/stoliki/stoliki6.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki6.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki7.webp" />
-            <img src="galeria/stoliki/stoliki7.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki7.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki8.webp" />
-            <img src="galeria/stoliki/stoliki8.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki8.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki9.webp" />
-            <img src="galeria/stoliki/stoliki9.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki9.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki10.webp" />
-            <img src="galeria/stoliki/stoliki10.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki10.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki11.webp" />
-            <img src="galeria/stoliki/stoliki11.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki11.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki12.webp" />
-            <img src="galeria/stoliki/stoliki12.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki12.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki13.webp" />
-            <img src="galeria/stoliki/stoliki13.JPG" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki13.JPG"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki14.webp" />
-            <img src="galeria/stoliki/stoliki14.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki14.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki15.webp" />
-            <img src="galeria/stoliki/stoliki15.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki15.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki16.webp" />
-            <img src="galeria/stoliki/stoliki16.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki16.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki17.webp" />
-            <img src="galeria/stoliki/stoliki17.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki17.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki18.webp" />
-            <img src="galeria/stoliki/stoliki18.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki18.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki19.webp" />
-            <img src="galeria/stoliki/stoliki19.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki19.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki20.webp" />
-            <img src="galeria/stoliki/stoliki20.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki20.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki21.webp" />
-            <img src="galeria/stoliki/stoliki21.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki21.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki22.webp" />
-            <img src="galeria/stoliki/stoliki22.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki22.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki23.webp" />
-            <img src="galeria/stoliki/stoliki23.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki23.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki24.webp" />
-            <img src="galeria/stoliki/stoliki24.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki24.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki25.webp" />
-            <img src="galeria/stoliki/stoliki25.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki25.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoliki/stoliki26.webp" />
-            <img src="galeria/stoliki/stoliki26.jpg" class="lazyload" alt=""
+            <img
+              data-src="galeria/stoliki/stoliki26.jpg"
+              class="lazyload"
+              alt=""
           /></picture>
         </div>
       </div>
@@ -783,7 +861,7 @@
 
     <div class="gallery_box" id="stumps">
       <h1 class="gallery_box-text">pieńki drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture
             ><source data-srcset="galeriawebp/pienki/pieniek1.webp" />
@@ -1113,7 +1191,7 @@
 
     <div class="gallery_box" id="table">
       <h1 class="gallery_box-text">stoły drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture
             ><source data-srcset="galeriawebp/stoly/stol1.webp" />
@@ -1182,9 +1260,10 @@
         </div>
       </div>
     </div>
+
     <div class="gallery_box" id="benches">
       <h1 class="gallery_box-text">ławki drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture
             ><source data-srcset="galeriawebp/lawki/lawki1.webp" />
@@ -1343,9 +1422,10 @@
         </div>
       </div>
     </div>
+
     <div class="gallery_box" id="other">
       <h1 class="gallery_box-text">inne wyroby drewniane</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture
             ><source data-srcset="galeriawebp/inne/inne1.webp" />
@@ -1525,9 +1605,10 @@
         spójrz,trochę pod innym kątem
       </p>
     </section>
+
     <div class="gallery_box" id="work">
       <h1 class="gallery_box-text">inaczej niż zwykle</h1>
-      <div id="lightgallery" class="gallery_box-image">
+      <div class="gallery_box-image lightgallery">
         <div>
           <picture
             ><source data-srcset="galeriawebp/work/work1.webp" />
@@ -1659,6 +1740,7 @@
         spójrz, jak sie z nami skontaktować
       </p>
     </section>
+
     <div class="container_contact">
       <div class="container_contact-box">
         <div class="container_contact-box-mail">
@@ -1741,10 +1823,9 @@
       </div>
     </div>
 
-    <script src="lazysizes.min.js" async=""></script>
-    <script src="./gallery.js"></script>
+    <script src="dist/script.min.js"></script>
     <script>
-      const galleries = document.querySelectorAll("#lightgallery");
+      const galleries = document.querySelectorAll(".lightgallery");
       galleries.forEach((gallery) => {
         Array.from(gallery.children).forEach((image, index) => {
           image.addEventListener(
