@@ -50,5 +50,5 @@ function setIndex(val) {
 }
 
 function updateText() {
-  span.innerHTML = `${showIndex + 1} / ${images.length - 1}`;
+  span.innerHTML = `${showIndex + 1} / ${images.length}`;
 }
