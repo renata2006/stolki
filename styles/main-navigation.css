@@ -28,6 +28,9 @@
   
 }
 @media(max-width: 991px) {
+    .main-navigation {
+        background: white;
+    }
     .main-navigation_menu {
         position: fixed;
         top: 0;
