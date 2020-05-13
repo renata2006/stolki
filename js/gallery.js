@@ -2,6 +2,7 @@ const modal = document.querySelector(".modal");
 const span = modal.querySelector("span");
 const content = modal.querySelector(".modal-content");
 const nav = document.querySelector(".main-navigation");
+const download = document.querySelector(".download > a");
 let showIndex = 0;
 let clone;
 let images;
@@ -14,6 +15,7 @@ function showModal(arr, image, index) {
   content.appendChild(clone);
   updateText();
   nav.style.display = "none";
+  download.setAttribute("href", addLink(image));
 }
 function closeModal() {
   content.removeChild(clone);
@@ -51,4 +53,8 @@ function setIndex(val) {
 
 function updateText() {
   span.innerHTML = `${showIndex + 1} / ${images.length}`;
+}
+
+function addLink(image) {
+  return image.getAttribute("src");
 }

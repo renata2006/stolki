@@ -10,6 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>stołki drewniane</title>
     <meta name="descripyion" content="stołki drewniane" />
+    <script
+      src="https://kit.fontawesome.com/38f8ceb0c8.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -1770,27 +1774,17 @@
 
     <div class="modal">
       <div class="modal-toolbar">
-        <span>4/4</span>
-        <button class="close" onclick="closeModal()">
-          <svg height="40" width="40">
-            <line
-              x1="10"
-              y1="10"
-              x2="40"
-              y2="40"
-              stroke="#FFFFFF"
-              stroke-width="1"
-            />
-            <line
-              x1="40"
-              y1="0"
-              x2="0"
-              y2="40"
-              stroke="#FFFFFF"
-              stroke-width="1"
-            />
-          </svg>
-        </button>
+        <span class="text">4/4</span>
+        <div class="icons">
+          <button class="download">
+            <a download href="">
+              <i class="fas fa-chevron-down fa-2x icon"></i>
+            </a>
+          </button>
+          <button class="close" onclick="closeModal()">
+            <i class="fas fa-times fa-2x icon"></i>
+          </button>
+        </div>
       </div>
 
       <div class="modal-content">
@@ -1827,10 +1821,14 @@
     <script>
       const galleries = document.querySelectorAll(".lightgallery");
       galleries.forEach((gallery) => {
-        Array.from(gallery.children).forEach((image, index) => {
+        const images = Array.from(gallery.children).map(
+          (gal) => gal.firstElementChild.lastElementChild
+        );
+
+        images.forEach((image, index) => {
           image.addEventListener(
             "click",
-            showModal.bind(this, gallery.children, image, index)
+            showModal.bind(this, images, image, index)
           );
         });
       });
