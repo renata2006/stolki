@@ -1777,7 +1777,9 @@
         <span class="text">4/4</span>
         <div class="icons">
           <button class="download">
-            <i class="fas fa-chevron-down fa-2x icon"></i>
+            <a download href="">
+              <i class="fas fa-chevron-down fa-2x icon"></i>
+            </a>
           </button>
           <button class="close" onclick="closeModal()">
             <i class="fas fa-times fa-2x icon"></i>
@@ -1819,10 +1821,14 @@
     <script>
       const galleries = document.querySelectorAll(".lightgallery");
       galleries.forEach((gallery) => {
-        Array.from(gallery.children).forEach((image, index) => {
+        const images = Array.from(gallery.children).map(
+          (gal) => gal.firstElementChild.lastElementChild
+        );
+
+        images.forEach((image, index) => {
           image.addEventListener(
             "click",
-            showModal.bind(this, gallery.children, image, index)
+            showModal.bind(this, images, image, index)
           );
         });
       });
