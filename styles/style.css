@@ -79,6 +79,7 @@ img {
 
 .close:hover {
   transition: 0.9s;
+
   transform: rotate(90deg);
 }
 
