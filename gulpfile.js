@@ -16,8 +16,8 @@ function styles() {
 function scripts() {
   return gulp
     .src("js/*.js")
-    .pipe(uglify())
     .pipe(concat("script.min.js"))
+    .pipe(uglify())
     .pipe(gulp.dest("dist"));
 }
 
