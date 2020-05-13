@@ -37,6 +37,7 @@ function showImage(val) {
   content.removeChild(clone);
   setIndex(val);
   clone = images[showIndex].cloneNode(true);
+  download.setAttribute("href", addLink(clone));
   content.appendChild(clone);
 }
 
