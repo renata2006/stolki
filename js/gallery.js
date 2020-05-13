@@ -8,7 +8,6 @@ let clone;
 let images;
 
 function showModal(arr, image, index) {
-  console.log(arr);
   images = arr;
   showIndex = index;
   modal.style.display = "block";
@@ -16,7 +15,6 @@ function showModal(arr, image, index) {
   content.appendChild(clone);
   updateText();
   nav.style.display = "none";
-  console.log(image);
   download.setAttribute("href", addLink(image));
 }
 function closeModal() {
