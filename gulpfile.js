@@ -5,6 +5,7 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const autoprefixer = require("gulp-autoprefixer");
 // ts
+const babel = require("gulp-babel");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
@@ -54,6 +55,12 @@ function bundle() {
     .pipe(source("bundle.js"))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
+
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(uglify())
     .pipe(
       size({
