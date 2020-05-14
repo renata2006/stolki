@@ -1,4 +1,4 @@
-function hello(compiler: string) {
-  console.log(`Hello from ${compiler}`);
-}
-hello("TypeScript");
+import { initMenu } from "./main_navigation";
+
+initMenu();
+console.log("sssssssdsssds2");
