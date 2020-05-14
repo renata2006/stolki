@@ -57,5 +57,5 @@ function updateText() {
 }
 
 function addLink(image) {
-  return image.getAttribute("src");
+  return image.getAttribute("data-src");
 }
