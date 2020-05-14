@@ -1,0 +1,13 @@
+.container_about-us {
+  padding: 0 10%;
+  height: 100vh;
+}
+.container_about-us-header {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+.container_about-us-paragraph {
+  text-align: center;
+  font-size: 18px;
+}
