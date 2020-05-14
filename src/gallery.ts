@@ -1,7 +1,7 @@
-// const modal: HTMLElement = document.querySelector(".modal");
+// const modal = document.querySelector(".modal");
 // const span = modal.querySelector("span");
 // const content = modal.querySelector(".modal-content");
-// const nav: HTMLElement = document.querySelector(".main-navigation");
+// const nav = document.querySelector(".main-navigation");
 // const download = document.querySelector(".download > a");
 // let showIndex = 0;
 // let clone;
@@ -57,5 +57,5 @@
 // }
 
 // function addLink(image) {
-//   return image.getAttribute("src");
+//   return image.getAttribute("data-src");
 // }
