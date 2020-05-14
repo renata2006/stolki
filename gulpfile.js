@@ -13,6 +13,21 @@ function styles() {
     .pipe(gulp.dest("dist"));
 }
 
+var ts = require("gulp-typescript");
+var tsProject = ts.createProject("tsconfig.json");
+
+function trol() {
+  const jsFiles = tsProject.src().pipe(tsProject());
+
+  gulp.
+
+  return jsFiles.js
+    .pipe(gulp.src("src/lazysizes.min.js"))
+    .pipe(concat("script.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("dist"));
+}
+
 function scripts() {
   return gulp
     .src("js/*.js")
@@ -32,3 +47,4 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.watch = watch;
 exports.build = build;
+exports.trol = trol;

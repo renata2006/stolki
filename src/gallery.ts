@@ -1,7 +1,7 @@
-const modal = document.querySelector(".modal");
+const modal: HTMLElement = document.querySelector(".modal");
 const span = modal.querySelector("span");
 const content = modal.querySelector(".modal-content");
-const nav = document.querySelector(".main-navigation");
+const nav: HTMLElement = document.querySelector(".main-navigation");
 const download = document.querySelector(".download > a");
 let showIndex = 0;
 let clone;
