@@ -62,6 +62,7 @@ export class Modal {
     this.setIndex(val);
     this.clone = this.images[this.showIndex].cloneNode(true) as HTMLElement;
     this.download.setAttribute("href", this.addLink(this.clone));
+    this.setShareImageLink(this.clone);
     this.content.appendChild(this.clone);
   }
 
