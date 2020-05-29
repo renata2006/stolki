@@ -7,6 +7,7 @@ export class Modal {
   rightArrow: HTMLElement;
   leftArrow: HTMLElement;
   clone: HTMLElement;
+  shareLink: HTMLElement;
 
   images: HTMLElement[];
   showIndex = 0;
@@ -21,6 +22,7 @@ export class Modal {
     this.nav.style.display = "none";
 
     this.setElements();
+    this.setShareImageLink(image);
 
     this.clone = image.cloneNode(true) as HTMLElement;
     this.content.appendChild(this.clone);
@@ -60,6 +62,7 @@ export class Modal {
     this.setIndex(val);
     this.clone = this.images[this.showIndex].cloneNode(true) as HTMLElement;
     this.download.setAttribute("href", this.addLink(this.clone));
+    this.setShareImageLink(this.clone);
     this.content.appendChild(this.clone);
   }
 
@@ -91,11 +94,17 @@ export class Modal {
     return image.getAttribute("data-src");
   }
 
+  private setShareImageLink(image: HTMLElement) {
+    this.shareLink = this.modalOutlet.querySelector("share-buttons");
+    this.shareLink.setAttribute("img-src", this.addLink(image));
+  }
+
   private markup() {
     return `<div class="modal">
       <div class="modal-toolbar">
         <span class="text">4/4</span>
         <div class="icons">
+          <share-buttons></share-buttons>  
           <button class="download">
             <a download href="">
               <i class="fas fa-chevron-down fa-2x icon"></i>

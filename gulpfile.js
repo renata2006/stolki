@@ -18,7 +18,7 @@ const fancy_log = require("fancy-log");
 const prod = {
   basedir: ".",
   debug: true,
-  entries: ["src/main.ts"],
+  entries: ["src/main.ts", "src/shareList.ts"],
   cache: {},
   packageCache: {},
 };
