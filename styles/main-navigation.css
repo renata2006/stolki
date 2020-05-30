@@ -77,6 +77,8 @@
 }
 .main-navigation_link-2 {
     color: red;
+    transform: rotate(180deg);
+    display: block;
 }
 
 @media(max-width: 991px) {
