@@ -1,13 +1,22 @@
 .container_about-us {
   padding: 0 10%;
-  height: 100vh;
+  
 }
 .container_about-us-header {
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
+  padding-top: 3%;
 }
 .container_about-us-paragraph {
   text-align: center;
   font-size: 18px;
+  line-height: 1.8;
+  padding-bottom: 1%;
+}
+.container_about-us-signature {
+  padding-left: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
 }
