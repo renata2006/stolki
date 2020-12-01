@@ -1,13 +1,11 @@
-
 .container_about-us-header {
   text-transform: uppercase;
   font-size: 22px;
   text-align: center;
   padding-top: 3%;
-
 }
 .container_about-us-text {
-  background-image: url(/galeria/holidays-1937164_1280.jpg);
+  background-image: url(/galeria/holidays.jpg);
   color: white;
 }
 .container_about-us-paragraph {
@@ -23,7 +21,3 @@
   font-style: italic;
   padding-bottom: 2%;
 }
-
-
-
-
