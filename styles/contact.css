@@ -7,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
   font-weight: bold;
+  background-image: url('../galeria/christmas-bauble-gd4eaf3432_1280.jpg');
 }
 .container_contact-box {
   width: 100%;
@@ -20,6 +20,7 @@
 .container_contact-box-text {
   text-align: center;
   font-size: 20px;
+  
 }
 .container_contact-box-mail,
 .container_contact-box-telephon {
@@ -33,9 +34,6 @@
 }
 .container_contact-box-mail img {
   width: 60%;
-}
-.container_contact-box-telephon img {
-  width: 30%;
 }
 .container_contact-box-img {
   display: flex;
