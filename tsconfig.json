@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6"
+    "target": "es6",
+    "types": ["emailjs-com"],
+    "moduleResolution": "node"
   },
   "include": ["src/*.ts"],
   "exclude": ["node_modules"]
