@@ -3,11 +3,15 @@ init("user_R1UO7zkQn9IkFmSpudSnW");
 
 const myForm = document.querySelector("form");
 const button = document.querySelector(".email-send");
+const loader = document.querySelector(".loader");
 
 declare var grecaptcha: any;
 
 export function initEmail() {
   button.addEventListener("click", (e) => {
+    myForm.style.display = "none";
+    loader.style.display = "block";
+
     e.preventDefault();
     grecaptcha.ready(function () {
       grecaptcha
