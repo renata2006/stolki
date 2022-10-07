@@ -10,7 +10,7 @@ declare var grecaptcha: any;
 export function initEmail() {
   button.addEventListener("click", (e) => {
     myForm.style.display = "none";
-    loader.style.display = "block";
+    (loader as any).style.display = "block";
 
     e.preventDefault();
     grecaptcha.ready(function () {
