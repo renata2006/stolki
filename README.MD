@@ -1,8 +1,8 @@
-1. Strona jest hostowane na home.pl
+1. Strona jest hostowane na ovhclode
 
 2. Do wystartownania projektu:
 
    - npm i
-   - gulp build
+   - npm run build
 
 3. Formularz jest polanczony z emailem przez emailjs plarform.

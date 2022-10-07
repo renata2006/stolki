@@ -94,3 +94,11 @@ img {
     transform: translateY(-7px);
   }
 }
+
+.loader {
+  display: none;
+  font-size: 30px;
+  margin: 30px 0;
+  width: 600px;
+  text-align: center;
+}

@@ -28,6 +28,10 @@
   justify-content: center;
   align-items: center;
 }
+.container-newsletter {
+  display: flex;
+  align-items: center;
+}
 .container-newsletter input {
   display: inline-block;
   width: 100%;
