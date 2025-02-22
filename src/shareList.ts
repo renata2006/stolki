@@ -14,7 +14,7 @@ class ShareButtons extends HTMLElement {
 
     this.querySelector(".share").addEventListener("click", () => {
       this.imgSrc = this.getAttribute("img-src");
-      const u = "http://stolkidrewniane.pl/" + this.imgSrc;
+      const u = "http://stolkidrewniane.pl/";
       window.open(
         "http://www.facebook.com/sharer.php?u=" + encodeURIComponent(u),
         "sharer",

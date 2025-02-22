@@ -99,6 +99,10 @@
     display: none;
 }
 @media(max-width: 991px) {
+    .js-store {
+        width: 30px;
+    }
+
     .main_navigation_mobile-button {
         display: unset;
         background: white;
